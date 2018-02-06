@@ -1,0 +1,189 @@
+﻿@{
+	ViewBag.Title = "MainPage";
+	Layout = "~/Views/Shared/Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		/* Global */
+ .btn-sq-lg {
+  width: 210px !important;
+  height: 210px !important;
+}
+
+.btn-sq {
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 10px;
+}
+
+.btn-sq-sm {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 10px;
+}
+
+.btn-sq-xs {
+  width: 25px !important;
+  height: 25px !important;
+  padding:2px;
+}
+
+div.card {
+			/*width: 250px;*/
+			width:50%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+		}
+
+		
+
+		.header:hover {
+			background-color: #BCED91;
+		}
+
+		.margin-top {
+			margin-top: 4%;
+		}
+		.align-left {
+			text-align:left;
+			font-size:13px;
+			
+		}
+		
+
+		#circle{ background:  #449d44;; width: 16%; height: 198px; border-radius: 51%; border: 2px solid  white;animation-duration:1s; }
+		#circle div { position:relative; left: 20%; top: 21%; width: 13%; height: 20%; color: white; text-align:center; }
+
+
+		.inner-div {
+			margin-left: -15%;
+			margin-top: -9%;
+		}
+
+
+		@@media (max-width: 568px) {
+
+			/*Allow main to be next to Nav*/
+			#circle {
+				background: #449d44;
+				font-size:5px;
+				width: 8%;
+				height: 198px;
+				border-radius: 51%;
+				border: 2px solid white;
+				animation-duration: 1s;
+			}
+
+				#circle div {
+					position: relative;
+					left: 20%;
+					top: 21%;
+					width: 6.5%;
+					height: 10%;
+					color: white;
+					text-align: center;
+				}
+
+				.btn-sq-lg {
+  width: 50px !important;
+  height: 50px !important;
+  padding:2px;
+  
+}
+
+		}
+		@@media (max-width: 868px ) and  (min-width: 568px ) {
+
+			/*Allow main to be next to Nav*/
+			#circle {
+				background: #449d44;
+				font-size:9px;
+				width: 8%;
+				height: 198px;
+				border-radius: 51%;
+				border: 2px solid white;
+				animation-duration: 1s;
+			}
+
+				#circle div {
+					position: relative;
+					left: 20%;
+					top: 21%;
+					width: 6.5%;
+					height: 10%;
+					color: white;
+					text-align: center;
+
+				}
+
+				.btn-sq-lg {
+  width: 100px !important;
+  height: 100px !important;
+  padding:2px;
+  
+}
+
+		}
+	</style>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+	<div class="container" style="margin-left:10%; ">
+		<div  class="col-xs-4">
+			<div class="row">
+				<a href="#" id="circle" class="btn btn-sq-lg btn-primary  w3-animate-right" style="margin-left:15%;margin-top:45%;background:#0070ba ;  ">
+					<i class="fa fa-user fa-2x"></i><br />
+					Demo Primary <br>Button
+				</a>
+				</div>
+			<div class="row">
+				<a href="#" id="circle"  class="btn btn-sq-lg btn-primary  w3-animate-right" style="margin-left:15%;margin-top:19%;background:#0070ba ; ">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Primary <br>Button
+				</a>
+			</div>
+			</div>
+		<div  class="col-xs-4" style="margin-top:8%;">
+			<div class="row">
+				<a href="#" id="circle" class="btn btn-sq-lg btn-primary  w3-animate-bottom" style="margin-left:15%;background:#0070ba ;; ">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Primary <br>Button
+				</a>
+			</div>
+			<div class="row">
+				<a href="#" id="circle"  class="btn btn-sq-lg btn-primary  w3-animate-zoom" style="margin-left:15%;background:#cea12a;margin-top:15%; background:#0070ba   ">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Primary <br>Button
+				</a>
+			</div>
+			<div class="row">
+				<a href="#" id="circle" class="btn btn-sq-lg btn-primary  w3-animate-top" style="margin-left:15%;background:#cea12a;margin-top:15%;background:#0070ba   ; ">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Primary <br>Button
+				</a>
+			</div>
+		</div>
+		<div  class="col-xs-4">
+			<div class="row">
+				<a href="#"  id="circle" class="btn btn-sq-lg btn-danger  w3-animate-left" style="margin-left:15%; background:#3071a9;margin-top:45%; background:#0070ba   ">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Danger <br>Button
+				</a>
+				</div>
+			<div class="row">
+				<a href="#" id="circle"  class="btn btn-sq-lg btn-danger  w3-animate-left" style="margin-left:15%; background:#3071a9; margin-top:19%; background:#0070ba  ;">
+					<i class="fa fa-user fa-5x"></i><br />
+					Demo Danger <br>Button
+				</a>
+			</div>
+			</div>
+
+		
+
+	</div>
+</body>

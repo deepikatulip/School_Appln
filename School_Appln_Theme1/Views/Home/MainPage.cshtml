@@ -1,0 +1,235 @@
+﻿
+@{
+    ViewBag.Title = "MainPage";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="~/Content/assets/css/bootstrap.css" rel="stylesheet" />
+	<!-- FONT AWESOME CSS -->
+	<link href="~/Content/assets/css/font-awesome.min.css" rel="stylesheet" />
+	<!-- FLEXSLIDER CSS -->
+	<link href="~/Content/assets/css/flexslider.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+	<link href="~/Content/assets/css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	@*<script src="~/Content/assets/js/jquery-1.10.2.js"></script>
+	<!--  Core Bootstrap Script -->
+	<script src="~/Content/assets/js/bootstrap.js"></script>
+	<!--  Flexslider Scripts -->
+	<script src="~/Content/assets/js/jquery.flexslider.js"></script>
+	<!--  Scrolling Reveal Script -->
+	<script src="~/Content/assets/js/scrollReveal.js"></script>
+	<!--  Scroll Scripts -->
+	<script src="~/Content/assets/js/jquery.easing.min.js"></script>
+	<!--  Custom Scripts -->
+	<script src="~/Content/assets/js/custom.js"></script>*@
+	<style>
+		div.card {
+			/*width: 250px;*/
+			width:50%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+		}
+
+		
+
+		.header:hover {
+			background-color: #BCED91;
+		}
+
+		.margin-top {
+			margin-top: 4%;
+		}
+		.align-left {
+			text-align:left;
+			font-size:13px;
+			
+		}
+		/*#circle{ background:  #449d44;; width: 198px; height: 198px; border-radius: 164px; border: 2px solid  white;animation-duration:1s; }*/
+
+		#circle{ background:  #449d44;; width: 16%; height: 198px; border-radius: 51%; border: 2px solid  white;animation-duration:1s; }
+		#circle div { position:relative; left: 20%; top: 21%; width: 13%; height: 20%; color: white; text-align:center; }
+/*#circle div { position:relative; left: 59px; top: 69px; width: 90px; height: 90px; color: white; text-align:center; }*/
+
+
+		.inner-div {
+			margin-left:-15%;
+			margin-top:-9%;
+		}
+
+
+		@@media (max-width: 568px) {
+			.font {
+				font-size:10px;
+			}
+		}
+	</style>
+</head>
+<div  class="container-fluid content-page col-xs-12" style="margin-top:10%; " >
+
+
+
+	<div class="row margin-top">
+
+		@*<div id="circle" class="card w3-container w3-center w3-animate-bottom" style="margin-left:40%;margin-top:-13%; ">
+			<div class="inner-div">
+				<i class="fa fa-user" aria-hidden="true" style="font-size:100%; "></i>
+
+				<p style="font-size:100%;text-align:center; ">MANAGE </p>
+				<p style="font-size:100%;margin-top:-1%;text-align:center; ">STUDENTS </p>
+			</div>
+		</div>
+		<div id="circle" class="card w3-container w3-center w3-animate-right" style="margin-left:40%;margin-top:1%; background:#1c2b4b;">
+			<div class="inner-div">
+				<i class="icon-building" aria-hidden="true" style="font-size:100%; "></i>
+
+				<p style="font-size:100%;">SCHOOL </p>
+				<p style="font-size:100%;margin-top:-10px;">MANAGEMENT</p>
+				<p style="font-size:100%;margin-top:-10px;">SYSTEM </p>
+			</div>
+		</div>
+
+		<div id="circle" class="card w3-container w3-center w3-animate-right"   style="margin-left:21%;margin-top:-23%;background:#cea12a;  ">
+			<div class="inner-div">
+				<i class="fa fa-user" aria-hidden="true" style="font-size:100%; "></i>
+
+				<p style="font-size:100%;">MANAGE </p>
+				<p style="font-size:100%;margin-top:-10px;">STUDENTS </p>
+			</div>
+		</div>
+
+		<div id="circle" class="card w3-container w3-center w3-animate-right" style="background:#31b0d5;margin-left:21%;margin-top:2%;  ">
+			<div class="inner-div">
+				<i class="fa fa-users" aria-hidden="true" style="font-size:100%; "></i>
+
+				<p style="font-size:100%;">MANAGE </p>
+				<p style="font-size:100%;margin-top:-10px;">FACULTIES </p>
+			</div>
+		</div>
+		<div class="line">
+		<div id="circle" class="card w3-container w3-center w3-animate-top" style="background: #c9302c; margin-left:40%;margin-top:-8%; ">
+			<div class="inner-div">
+				<i class="fa fa-money" aria-hidden="true" style="font-size:100%;"></i>
+
+
+				<p style="font-size:100%;">MANAGE </p>
+				<p style="font-size:100%;margin-top:-10px;">FEES </p>
+			</div>
+		</div>
+		<div id="circle" class="card  w3-container w3-center w3-animate-left" style="background:#3071a9 ;margin-top:-25%; margin-left:59%; ">
+			<div class="inner-div">
+				<i class="fa fa-calendar" style="font-size:100%; "></i>
+
+
+				<p style="font-size:100%;">MANAGE </p>
+				<p style="font-size:100%;margin-top:-10px;">ATTENDANCE </p>
+			</div>
+		</div>
+			<div id="circle" class="card w3-container w3-center w3-animate-left" style="background: #bb628e ;margin-top:-33%; margin-left:59%; ">
+				<div class="inner-div">
+					<i class="fa fa-calendar" style="font-size:100%; "></i>
+
+
+					<p style="font-size:100%;">MANAGE </p>
+					<p style="font-size:100%;margin-top:-10px;">ATTENDANCE </p>
+				</div>
+			</div>
+
+		@*<div class="card w3-animate-zoom col-xs-4" style="width:40%; ">
+			<div class="header">
+
+				<i class="fa fa-user" aria-hidden="true"></i>
+
+
+				<p style="font-size:20px;">MANAGE </p>
+				<p style="font-size:20px;margin-top:-10px;">STUDENTS </p>
+
+			</div>
+			<hr />
+						<div class="container header" style="width:100%; ">
+				
+							<p class="align-left card">o ADD NEW STUDENT</p>
+		<p class="align-left card">o EDIT STUDENT DETAIL</p>
+							<p class="align-left card">o DELETE STUDENT DETAIL</p>
+		</div>
+		</div>*@
+
+		@*<div class="card w3-animate-zoom col-xs-3" style="width:49%;margin-left:2%;  ">
+			<div class="header2">
+
+				<i class="fa fa-users" aria-hidden="true"></i>
+
+
+				<p style="font-size:20px;">MANAGE </p>
+				<p style="font-size:20px;margin-top:-10px;">FACULTIES </p>
+
+			</div>
+			<hr />
+			<div class="container header2" style="width:100%; ">
+
+				<p class="align-left card">o ADD/EDIT TEACHING STAFF</p>
+				<p class="align-left card">o ADD/EDIT NON-TEACHING STAFF</p>
+				<p class="align-left card">o DELETE STAFF DETAIL</p>
+			</div>
+		</div>*@
+
+	</div>
+	
+	
+
+	<div class="row">
+
+		<div class="card w3-animate-zoom col-xs-3" style="width:49%; background: #449d44; margin-left:5%;">
+			<div class="header3 font" style="color:white; ">
+
+				<i class="fa fa-money" aria-hidden="true" style="font-size:20px;"></i>
+
+
+				<p style="font-size:20px;">MANAGE </p>
+				<p style="font-size:20px;margin-top:-10px;">FEES </p>
+
+			</div>
+			<hr />
+			<div class="container header3" style="width:100%;color:white; ">
+
+				<p class="align-left card">o ADD STUDENT FEES</p>
+				<p class="align-left card">o ENABLE ONLINE FEES PAYMENT WITH INVOICE</p>
+				<p class="align-left card">o FEES RELATED REPORT</p>
+			</div>
+		</div>
+
+		<div class="card w3-animate-zoom col-xs-3" style="width:49%;margin-left:2%; ">
+			<div class="header4">
+
+				<i class="fa fa-calendar"></i>
+
+
+				<p style="font-size:20px;">MANAGE </p>
+				<p style="font-size:20px;margin-top:-10px;">ATTENDANCE </p>
+
+			</div>
+
+			<hr />
+			<div class="container header4" style="width:100%; ">
+
+				<p class="align-left card">o ADD/EDIT STUDENT ATTENDANCE</p>
+				<p class="align-left card">o ADD/EDIT STAFF ATTENDANCE</p>
+				<p class="align-left card">o ATTENDANCE RELATED REPORT</p>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+	</div>
+
