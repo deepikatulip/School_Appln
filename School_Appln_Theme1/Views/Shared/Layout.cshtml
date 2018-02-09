@@ -30,7 +30,7 @@
 				
 				<a class="navbar-brand" href="#"><img class="logo-custom" src="~/Content/assets/img/logo180-50.png" alt="" /></a>
 			</div>
-			<div class="navbar-collapse collapse move-me">
+			<div class="navbar-collapse collapse move-me" style="z-index:10000;">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#features-sec">FEATURES</a></li>
@@ -49,12 +49,12 @@
 			@*<div class="col-xs-2"  style="background-color: black; margin-top:10%; min-height:1000px; " >*@
 				@*@Html.Partial("SideNavigationBar");*@
 				@*@Html.Partial("Side_MenuBar");*@
-				@*@Html.Partial("Responsive_SideNavBar")*@
+				
 				@*@Html.Partial("Responsive_SideBar")*@
 				@Html.Partial("View")
 			@*</div>*@
 			
-			<div class="col-xs-10" style="margin-top:5%; margin-left:-2% ">
+			<div class="col-xs-10" style="margin-top:5%; margin-left:2% ">
 				@RenderBody();
 			</div>
 		</div>
