@@ -443,9 +443,39 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blood_Group.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Designation.cs" />
+    <Compile Include="Models\FeePayment_Detail.cs" />
+    <Compile Include="Models\Fees_Component.cs" />
+    <Compile Include="Models\Fee_Detail.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Holiday.cs" />
+    <Compile Include="Models\Institution.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Mark_Detail.cs" />
+    <Compile Include="Models\Payment_Mode.cs" />
+    <Compile Include="Models\Qualification.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\School.cs" />
+    <Compile Include="Models\Section.cs" />
+    <Compile Include="Models\Specialization.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Staff_Educational_Details.cs" />
+    <Compile Include="Models\Staff_Exp_Details.cs" />
+    <Compile Include="Models\Staff_Type.cs" />
+    <Compile Include="Models\State.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\StudentOtherDetails.cs" />
     <Compile Include="Models\Students.cs" />
+    <Compile Include="Models\Student_Prev_School_Details.cs" />
+    <Compile Include="Models\Student_Sibling_Details.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Subject_Detail.cs" />
+    <Compile Include="Models\Term.cs" />
+    <Compile Include="Models\User_Roles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
