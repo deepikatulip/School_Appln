@@ -127,6 +127,7 @@ namespace School_Appln_Theme1.Controllers
 			new Student{FirstName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01"),ID = 7},
 			new Student{FirstName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01"),ID = 8}
 			};
+			
 			return View(students1.ToList());
 		}
 

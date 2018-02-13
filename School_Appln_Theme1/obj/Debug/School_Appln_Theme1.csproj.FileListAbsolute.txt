@@ -58,3 +58,7 @@ C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_
 C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\WebActivatorEx.dll
 C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\MVCGrid.xml
 C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\obj\Debug\School_Appln_Theme1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\EntityFramework.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\EntityFramework.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\School_Appln_Theme1\School_Appln_Theme1\bin\EntityFramework.SqlServer.xml

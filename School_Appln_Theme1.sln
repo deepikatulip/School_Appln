@@ -5,10 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School_Appln_Theme1", "School_Appln_Theme1\School_Appln_Theme1.csproj", "{FD70EFFA-0DF9-4A64-81FD-44E25C21367D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School_Appln_Model", "School_Appln_Model\School_Appln_Model.csproj", "{E8D58FF9-434D-41DB-9DE6-1D55429944E2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School_Appln_DataAccess", "School_Appln_DataAccess\School_Appln_DataAccess.csproj", "{3B52AFA5-BC6A-4682-81BD-368FA197B394}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{FD70EFFA-0DF9-4A64-81FD-44E25C21367D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD70EFFA-0DF9-4A64-81FD-44E25C21367D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD70EFFA-0DF9-4A64-81FD-44E25C21367D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8D58FF9-434D-41DB-9DE6-1D55429944E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8D58FF9-434D-41DB-9DE6-1D55429944E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8D58FF9-434D-41DB-9DE6-1D55429944E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8D58FF9-434D-41DB-9DE6-1D55429944E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B52AFA5-BC6A-4682-81BD-368FA197B394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B52AFA5-BC6A-4682-81BD-368FA197B394}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B52AFA5-BC6A-4682-81BD-368FA197B394}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B52AFA5-BC6A-4682-81BD-368FA197B394}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
