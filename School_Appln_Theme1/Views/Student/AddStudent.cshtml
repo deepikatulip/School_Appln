@@ -1,0 +1,102 @@
+﻿@model PagedList.IPagedList<School_Appln_Theme1.Models.Student>
+@using PagedList.Mvc;
+<head>
+	<script src="~/Scripts/jquery.validate.min.js"></script>
+	
+	
+	<link href="~/Content/assets/css/style.css" rel="stylesheet" type="text/css" />
+	@{
+		ViewBag.Title = "AddStudent";
+		Layout = "~/Views/Shared/Layout.cshtml";
+	}
+
+
+
+
+</head>
+
+
+
+<html>
+<body >
+	<p>
+		@Html.ActionLink("Add Student", "CreateStudent")
+		@*<input id="newStudent" class="button" value="ADD STUDENT" type="button" />*@
+	</p>
+	@using (Ajax.BeginForm("AddStudent", "Student",
+					new AjaxOptions
+					{
+						HttpMethod = "GET",
+						OnSuccess = "OnSuccess",
+						OnFailure = "OnFailure",
+						LoadingElementId = "progress"
+					}))
+	{
+		<p>
+			<div class="row">
+				<div class="col-xs-2">
+					Find by Name:
+					</div>
+					<div class="col-xs-3">
+						@Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control small-text-box" ,@style="margin-left:-20%"})
+					</div>
+					<div class="col-xs-3">
+						<input type="submit" value="SEARCH" class="btn btn-info btn-set" />
+					</div>
+				</div>
+		</p>
+		<div id="studentDetailsGrid" >
+
+			<table class="table">
+				<tr style="border: 1px solid gainsboro;">
+					<th style="background-color: #172B4B;color : white;border: 1px solid gainsboro; font-family:Arial, Helvetica, sans-serif; ">
+						@Html.ActionLink("LAST NAME", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+					</th>
+					<th style="background-color: #172B4B;color : white;;border: 1px solid gainsboro; ">
+						FIRST NAME
+					</th>
+					<th style="background-color: #172B4B;color : white;;border: 1px solid gainsboro; ">
+						@Html.ActionLink("ENROLLMENT DATE", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+					</th>
+					<th style="background-color: #172B4B;color : white;;border: 1px solid gainsboro; "></th>
+				</tr>
+
+
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td style="border: 1px solid gainsboro;">
+							@Html.DisplayFor(modelItem => item.LastName)
+						</td>
+						<td style="border: 1px solid gainsboro;">
+							@Html.DisplayFor(modelItem => item.FirstName)
+						</td>
+						<td style="border: 1px solid gainsboro;">
+							@Html.DisplayFor(modelItem => item.EnrollmentDate)
+						</td>
+						<td style="border: 1px solid gainsboro;">
+							@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+							@Html.ActionLink("Details", "Details", new { id = item.ID }) |
+							@Html.ActionLink("Delete", "Delete", new { id = item.ID })
+						</td>
+					</tr>
+				}
+
+			</table>
+		</div>
+	<br />
+	}
+	Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+	@*@Html.PagedListPager(Model, page => Url.Action("AddStudent",
+	new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))*@
+
+	@Html.PagedListPager(
+	Model,
+	page => Url.Action("AddStudent", new { page = page , sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }),
+	PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "studentDetailsGrid" })
+)
+
+</body>
+</html>
+

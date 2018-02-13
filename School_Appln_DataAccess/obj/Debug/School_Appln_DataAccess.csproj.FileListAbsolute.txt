@@ -1,0 +1,4 @@
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_DataAccess\bin\Debug\School_Appln_DataAccess.dll
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_DataAccess\bin\Debug\School_Appln_DataAccess.pdb
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_DataAccess\obj\Debug\School_Appln_DataAccess.dll
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_DataAccess\obj\Debug\School_Appln_DataAccess.pdb

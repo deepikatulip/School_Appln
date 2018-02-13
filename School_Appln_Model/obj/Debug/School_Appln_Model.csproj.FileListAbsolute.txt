@@ -1,0 +1,4 @@
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Model\bin\Debug\School_Appln_Model.dll
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Model\bin\Debug\School_Appln_Model.pdb
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Model\obj\Debug\School_Appln_Model.dll
+C:\Users\admin\documents\visual studio 2015\Projects\School_Appln_Theme1\School_Appln_Model\obj\Debug\School_Appln_Model.pdb

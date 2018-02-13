@@ -1,0 +1,122 @@
+﻿
+@model IEnumerable<School_Appln_Theme1.Models.Student>
+@{
+	ViewBag.Title = "AddStudent";
+	Layout = "~/Views/Shared/Layout.cshtml";
+}
+<html>
+<head>
+	
+	
+	<style type="text/css">
+		
+		   
+	</style>
+	
+	
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+	//Datatable 
+	$('#example').DataTable( {
+		dom: 'Bfrtip',
+		buttons: [
+		  { extend: 'copyFlash' },
+		  { extend: 'csvFlash' },
+
+		   { extend: 'excelFlash'},
+		  { extend: 'pdfFlash' }
+		]
+	
+	});
+
+	$('#example tbody').on('click', 'tr', function () {
+		debugger
+		var data = $('#example').DataTable().row(this).data();
+		alert('You clicked on ' + data[0] + '\'s row');
+	});
+
+	$("#btnAddStudent").click(function () {
+
+		window.location.href = '@Url.Action("CreateStudent", "Student")';
+	});
+	});
+
+	$('#btnEdit').each(function () {
+		debugger
+	})	
+	</script>
+
+</head>
+<body>
+	<div class="row col-xs-12">
+		<input type="button" id="btnAddStudent" value="ADD STUDENT" class="btn btn-info btn-set" style="margin-left:1%;background-color:#172B4B"  />
+	</div>
+	<br />
+	<br />
+	
+	<div class="row col-md-12 col-xs-12">
+		<div class="col-md-12 col-xs-12">
+			<div class="panel panel-primary list-panel" id="list-panel" >
+				<div class="panel-heading list-panel-heading" style="background-color:#172B4B;">
+					<p>STUDENT LIST</p>
+					@*<h1 class="panel-title list-panel-title">STUDENT LIST</h1>*@
+				</div>
+				<div class="panel-body">
+					<table id="example" class="display col-md-12 col-xs-12" cellspacing="0" >
+						<thead>
+							<tr style="background-color:#172B4B;color:white; ">
+								<th>Name</th>
+								<th>Position</th>
+								<th>Office</th>
+								<th>Age</th>
+								<th>Start date</th>
+								<th>Salary</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr style="background-color:#172B4B;color:white; ">
+								<th style="background-color:#172B4B; ">Name</th>
+								<th style="background-color:#172B4B; ">Position</th>
+								<th style="background-color:#172B4B; ">Office</th>
+								<th style="background-color:#172B4B; ">Age</th>
+								<th style="background-color:#172B4B; ">Start date</th>
+								<th style="background-color:#172B4B; ">Salary</th>
+								<th style="background-color:#172B4B; "></th>
+								<th style="background-color:#172B4B; "></th>
+							</tr>
+						</tfoot>
+						<tbody>
+							@foreach (var asset in Model)
+			{
+								<tr>
+									<td>@asset.FirstName</td>
+									<td>@asset.FirstName</td>
+									<td>@asset.LastName</td>
+									<td>@asset.LastName</td>
+									<td>@asset.LastName</td>
+									<td>
+										@asset.LastName
+									</td>
+									<td>
+										@asset.ID
+									</td>
+									<td>
+										<input type="button" value="EDIT" id="btnEdit" class="btn btn-info btn-set" />
+										<input type="hidden" value="@asset.ID" id="btnHiddenId" />
+										<input type="button" value="DELETE" id="btnDelete" class="btn btn-info btn-set btn-danger" style=" " />
+									</td>
+								</tr>
+			}
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
