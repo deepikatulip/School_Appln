@@ -18,6 +18,7 @@ namespace School_Appln_Theme1.Controllers
 		{
 			return View();
 		}
+		//
 
 		public ActionResult Tezt()
 		{
