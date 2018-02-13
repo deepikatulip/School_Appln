@@ -18,5 +18,6 @@ namespace School_Appln_Theme1.Models
 		public string LastName { get; set; }
 
 		public int ID { get; set; }
+		//added comments 
 	}
 }
